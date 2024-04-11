@@ -1,0 +1,13 @@
+.body {
+    background-color: #2a2c2f;
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    font-family: Inter;
+}
+
+@media screen and (max-width:768px) {
+    .body {
+        margin: 0;
+    }
+}

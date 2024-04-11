@@ -1,0 +1,30 @@
+.place__image {
+    margin: 0;
+    grid-area: image;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1024px) {
+    .place__image {
+        max-width: 440px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .place__image {
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width:686px) {
+    .place__image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .place__image {
+        max-width: 100%;
+    }
+}

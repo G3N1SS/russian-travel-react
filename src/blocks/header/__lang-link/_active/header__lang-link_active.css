@@ -1,0 +1,15 @@
+.header__lang-link_active {
+    transition: all .3s;
+    animation: click 1s ease-in-out;
+}
+
+.header__lang-link_active::after{
+    content: '';
+    animation: apearingRight .8s ease-in-out forwards;
+    height: 1px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+}

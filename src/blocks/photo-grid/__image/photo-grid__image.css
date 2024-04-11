@@ -1,0 +1,17 @@
+.photo-grid__image {
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.photo-grid__image:hover{
+    transform: scale(1.05)
+}
+
+@media screen and (max-width:425px) {
+    .photo-grid__image {
+        min-width: 288px;
+        min-height: 216px;
+    }
+}
