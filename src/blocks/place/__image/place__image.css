@@ -3,6 +3,12 @@
     grid-area: image;
     box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    transition: all .3s;
+}
+
+.place__image:hover{
+    opacity: 0.9;
+    transform: scale(1.02);
 }
 
 @media screen and (max-width:1024px) {

@@ -1,5 +1,5 @@
 import Card from "./Card";
-import photogrid from "../utils/constants";
+import {photogrid} from "../utils/constants";
 
 export default function PhotoGrid({onCardClick}){
   return(
