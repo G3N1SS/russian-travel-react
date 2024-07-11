@@ -1,4 +1,4 @@
-import Logo from '../images/__logo.svg'
+import Logo from '../images/logo.svg'
 import { useState } from 'react'
 
 export default function Header({onLanguageChange, isEnglish}){
