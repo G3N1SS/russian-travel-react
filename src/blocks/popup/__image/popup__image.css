@@ -1,4 +1,16 @@
 .popup__image {
-    width: 30vw;
+    width: 43vw;
     border-radius: 5px;
+}
+
+@media screen and (max-width:768px){
+    .popup__image{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:568px){
+    .popup__image{
+        width: 95vw;
+    }
 }

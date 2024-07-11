@@ -13,3 +13,9 @@
     transition: opacity .4s, visibility .4s;
     z-index: 100;
 }
+
+@media screen and (max-width:568px){
+    .popup_opened{
+        max-width: 320px;
+    }
+}

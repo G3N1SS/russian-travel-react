@@ -27,6 +27,11 @@
     .place__image {
         max-width: 100%;
     }
+
+    .place__image:hover{
+        opacity: 0.9;
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width:426px) {

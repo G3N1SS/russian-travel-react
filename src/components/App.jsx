@@ -7,6 +7,8 @@ import Popup from './Popup'
 import Places from './Places'
 import Cover from './Cover'
 import Footer from './Footer'
+import "aos/dist/aos.css"
+import Aos from 'aos';
 
 function App() {
   const [selectedCard, setSelectedCard] = useState({});
@@ -43,6 +45,14 @@ function App() {
     }
   }, [isImagePopupOpen, closePopup])
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      offset: 40,
+      once: true
+  })
+  }, [])
+
   function handleCardClick(card) {
     setSelectedCard(card);
     setImagePopup(true)
@@ -62,15 +72,15 @@ function App() {
 
   return (
     <div className='page'>
-      <Header onLanguageChange={handleLanguageChange}/>
+      <Header onLanguageChange={handleLanguageChange} isEnglish={isEnglish}/>
       <main>
-        <Lead/>
-        <Intro/>
+        <Lead isEnglish={isEnglish}/>
+        <Intro isEnglish={isEnglish}/>
         <PhotoGrid onCardClick={handleCardClick}/>
-        <Places onCardClick={handleCardClick}/>
-        <Cover/>
+        <Places onCardClick={handleCardClick} isEnglish={isEnglish}/>
+        <Cover isEnglish={isEnglish}/>
       </main>
-      <Footer/>
+      <Footer isEnglish={isEnglish}/>
       <Popup card={selectedCard} isOpen={isImagePopupOpen} onClose={closePopup}/>
     </div>
   )

@@ -1,6 +1,7 @@
 .header__lang-link_active {
     transition: all .3s;
     animation: click 1s ease-in-out;
+    border-bottom: 1px solid #fff;
 }
 
 .header__lang-link_active::after{

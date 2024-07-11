@@ -10,6 +10,7 @@
     max-width: 640px;
     max-height: 72px;
     grid-area: subtitle;
+    animation: apearingLeft 1s ease-in-out;
 }
 
 @media screen and (max-width:788px) {
